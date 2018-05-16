@@ -23,11 +23,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="https://56f26c7d8a464701a9825339832bbe83.vfs.cloud9.us-east-2.amazonaws.com/message-board">MessageBoard</a>
+                <a class="navbar-brand" href="./index.php">MessageBoard</a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="https://56f26c7d8a464701a9825339832bbe83.vfs.cloud9.us-east-2.amazonaws.com/message-board/create-newmessage.php">新規メッセージの投稿</a></li>
+                    <li><a href="./create-newmessage.php">新規メッセージの投稿</a></li>
                 </ul>
             </div>
         </div>
@@ -40,7 +40,7 @@
     
     <div class="row">
         <div class="col-xs-6">
-            <form method="POST" action="https://56f26c7d8a464701a9825339832bbe83.vfs.cloud9.us-east-2.amazonaws.com/message-board/insert-newmessage.php" accept-charset="UTF-8" enctype="multipart/form-data">
+            <form method="POST" action="./insert-newmessage.php" accept-charset="UTF-8" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="title">タイトル:</label>
                     <input class="form-control" name="message_title" type="text" id="title">

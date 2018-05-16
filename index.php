@@ -41,11 +41,11 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="https://56f26c7d8a464701a9825339832bbe83.vfs.cloud9.us-east-2.amazonaws.com/message-board/">MessageBoard</a>
+                        <a class="navbar-brand" href="./index.php">MessageBoard</a>
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="https://56f26c7d8a464701a9825339832bbe83.vfs.cloud9.us-east-2.amazonaws.com/message-board/create-newmessage.php">新規メッセージの投稿</a></li>
+                            <li><a href="./create-newmessage.php">新規メッセージの投稿</a></li>
                         </ul>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
                     
 ?>
                     <tr>
-                        <td><?php echo "<a href=\"https://56f26c7d8a464701a9825339832bbe83.vfs.cloud9.us-east-2.amazonaws.com/message-board/detail-message.php?id=$id\">".$id; ?></td>
+                        <td><?php echo "<a href=\"./detail-message.php?id=$id\">".$id; ?></td>
                         <td><?php print $message_title; ?></td>
                         <td><?php print $message; ?></td>
                         <td><img src="<?php print $link ?>" ></td>
@@ -84,7 +84,7 @@
 ?>
                 </tbody>
             </table>
-            <a href="https://56f26c7d8a464701a9825339832bbe83.vfs.cloud9.us-east-2.amazonaws.com/message-board/create-newmessage.php" class="btn btn-primary">新規メッセージの投稿</a>
+            <a href="./create-newmessage.php" class="btn btn-primary">新規メッセージの投稿</a>
         </div>
     </body>
 </html>

@@ -52,5 +52,5 @@
         // ステートメントを破棄する
         $statement = null;
     }
-    header( "Location:https://56f26c7d8a464701a9825339832bbe83.vfs.cloud9.us-east-2.amazonaws.com/message-board/index.php" ) ;
+    header( "Location:./index.php" ) ;
 ?>

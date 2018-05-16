@@ -43,11 +43,11 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="https://56f26c7d8a464701a9825339832bbe83.vfs.cloud9.us-east-2.amazonaws.com/message-board">MessageBoard</a>
+                        <a class="navbar-brand" href="./index.php">MessageBoard</a>
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="https://56f26c7d8a464701a9825339832bbe83.vfs.cloud9.us-east-2.amazonaws.com/message-board/create-newmessage.php">新規メッセージの投稿</a></li>
+                            <li><a href="./create-newmessage.php">新規メッセージの投稿</a></li>
                         </ul>
                     </div>
                 </div>
@@ -82,8 +82,8 @@
             }
 ?>           
             </table>
-            <a href="https://56f26c7d8a464701a9825339832bbe83.vfs.cloud9.us-east-2.amazonaws.com/message-board/edit-message.php?id=<?php print $id;?>" class="btn btn-default">このメッセージ編集</a>
-            <form method="POST" action="https://56f26c7d8a464701a9825339832bbe83.vfs.cloud9.us-east-2.amazonaws.com/message-board/delete-message.php?id=<?php print$id; ?>" accept-charset="UTF-8">
+            <a href="./edit-message.php?id=<?php print $id;?>" class="btn btn-default">このメッセージ編集</a>
+            <form method="POST" action="./delete-message.php?id=<?php print$id; ?>" accept-charset="UTF-8">
                 <input name="_method" type="hidden" value="DELETE">
                 <input class="btn btn-danger" type="submit" value="削除">
             </form>
