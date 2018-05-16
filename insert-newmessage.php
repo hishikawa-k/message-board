@@ -3,7 +3,7 @@
     $_SESSION["insert_title"] = $_POST["message_title"];
     $_SESSION["insert_message"] = $_POST["message"];
     $file_name = $_FILES['add_message_image']['name'];
-    $image_path = ' ./upload/' . $file_name;
+    $image_path = './upload/' . $file_name;
     move_uploaded_file($_FILES['add_message_image']['tmp_name'], $image_path);
     
     // MySQLサーバ接続に必要な値を変数に代入
