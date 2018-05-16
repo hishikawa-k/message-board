@@ -69,12 +69,14 @@
                     $id = $record['id'];
                     $message_title = $record['message_title'];
                     $message = $record['message'];
+                    $link = $record['link'];
                     
 ?>
                     <tr>
                         <td><?php echo "<a href=\"https://56f26c7d8a464701a9825339832bbe83.vfs.cloud9.us-east-2.amazonaws.com/message-board/detail-message.php?id=$id\">".$id; ?></td>
                         <td><?php print $message_title; ?></td>
                         <td><?php print $message; ?></td>
+                        <td><img src="<?php print $link ?>" ></td>
                     <tr>
 <?php
                 }

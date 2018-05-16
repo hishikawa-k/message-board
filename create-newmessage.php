@@ -40,7 +40,7 @@
     
     <div class="row">
         <div class="col-xs-6">
-            <form method="POST" action="https://56f26c7d8a464701a9825339832bbe83.vfs.cloud9.us-east-2.amazonaws.com/message-board/insert-newmessage.php" accept-charset="UTF-8">
+            <form method="POST" action="https://56f26c7d8a464701a9825339832bbe83.vfs.cloud9.us-east-2.amazonaws.com/message-board/insert-newmessage.php" accept-charset="UTF-8" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="title">タイトル:</label>
                     <input class="form-control" name="message_title" type="text" id="title">
@@ -49,6 +49,10 @@
                 <div class="form-group">
                     <label for="content">メッセージ:</label>
                     <input class="form-control" name="message" type="text" id="content">
+                </div>
+                
+                <div class="message_image">
+                    <input type="file" name="add_message_image">
                 </div>
                 
                <input class="btn btn-primary" type="submit" value="投稿">
