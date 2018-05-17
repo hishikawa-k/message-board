@@ -35,7 +35,7 @@
     }
 
     // フォームに必要な情報が入力されていれば
-    elseif (isset($_SESSION["insert_title"]) && isset($_SESSION["insert_message"])) {
+    elseif (isset($_SESSION["insert_title"]) && isset($_SESSION["insert_message"]) && $_SESSION == "./upload/") {
         // 実行するSQLを作成
         $sql = 'INSERT INTO messageboard.messages (message_title,message) VALUES(:title,:content)';
         
