@@ -76,7 +76,7 @@
                         <td><?php echo "<a href=\"./detail-message.php?id=$id\">".$id; ?></td>
                         <td><?php print $message_title; ?></td>
                         <td><?php print $message; ?></td>
-                        <td><img src="<?php print $link ?>" ></td>
+                        <td><img src="<?php print $link ?>" alt="image" onerror="this.style.display='none'"/></td>
                     <tr>
 <?php
                 }

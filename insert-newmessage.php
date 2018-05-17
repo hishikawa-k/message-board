@@ -34,23 +34,5 @@
    
     }
 
-    // フォームに必要な情報が入力されていれば
-    elseif (isset($_SESSION["insert_title"]) && isset($_SESSION["insert_message"]) && $_SESSION == "./upload/") {
-        // 実行するSQLを作成
-        $sql = 'INSERT INTO messageboard.messages (message_title,message) VALUES(:title,:content)';
-        
-        // ユーザ入力に依存するSQLを実行するので、セキュリティ対策をする
-        $statement = $database->prepare($sql);
-        
-        // ユーザ入力データ($_POST['book_title'])をVALUES(?)の?の部分に代入する
-        $statement->bindParam(':title', $_SESSION["insert_title"]);
-        $statement->bindParam(':content', $_SESSION["insert_message"]);
-        
-        // SQL文を実行する
-        $statement->execute();
-        
-        // ステートメントを破棄する
-        $statement = null;
-    }
-    header( "Location:./index.php" ) ;
+  header( "Location:./index.php" ) ;
 ?>
